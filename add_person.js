@@ -25,7 +25,7 @@ function insert_person(firstname, lastname, birthdate){
     if (err) {
       return console.log(err);
     }
-    console.log(result);
+    console.log(result.rows);
     knex.destroy();
     })
   }
